@@ -1,7 +1,6 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 
-export default function ProductScreen() {
+function ProductScreen() {
   const params = useParams();
   const { slug } = params;
   return (
@@ -10,3 +9,4 @@ export default function ProductScreen() {
     </div>
   );
 }
+export default ProductScreen;
